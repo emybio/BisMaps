@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd" version="2.0">
+	<entity class="com.bistekno.maps.entities.TblBolge"> 
+		<table name="tblbolge" schema="public" />
+		<named-query name="List">
+			<query>Select T From TblBolge T</query>
+		</named-query>
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE" />
+			</id>
+			<basic name="ad">
+				<column name="ad" nullable="false" />
+			</basic>
+		</attributes>
+	</entity>  
+	<entity class="com.bistekno.maps.entities.TblIlce"> 
+		<table name="tblilce" schema="public" />
+		<named-query name="ListIlce">
+			<query>Select T From TblIlce T</query>
+		</named-query>
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE" />
+			</id>
+			<basic name="ad">
+				<column name="ad" nullable="false" />
+			</basic>
+		</attributes>
+	</entity>  
+	<entity class="com.bistekno.maps.entities.TblCaddeSokak"> 
+		<table name="tblcaddesokak" schema="public" />
+		<named-query name="ListCaddeSokak">
+			<query>Select T From TblCaddeSokak T</query>
+		</named-query>
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE" />
+			</id>
+			<basic name="ad">
+				<column name="ad" nullable="false" />
+			</basic>
+		</attributes>
+	</entity> 
+	<entity class="com.bistekno.maps.entities.TblMahalleKoy"> 
+		<table name="tblmahallekoy" schema="public" />
+		<named-query name="ListMahalleKoy">
+			<query>Select T From TblMahalleKoy T</query>
+		</named-query>
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE" />
+			</id>
+			<basic name="ad">
+				<column name="ad" nullable="false" />
+			</basic>
+		</attributes>
+	</entity> 
+	<entity class="com.bistekno.maps.entities.TblTur"> 
+		<table name="tbltur" schema="public" />
+		<named-query name="ListTur">
+			<query>Select T From TblTur T</query>
+		</named-query>
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE" />
+			</id>
+			<basic name="ad">
+				<column name="ad" nullable="false" />
+			</basic>
+		</attributes>
+	</entity> 
+</entity-mappings>
